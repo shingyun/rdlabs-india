@@ -1,0 +1,114 @@
+
+body {
+	background-color: #D6D6D6;
+}
+
+.title {
+	position:absolute;
+	width: 100%;
+	height: 70px;
+	left:500px;
+}
+
+h1 {
+	margin-left:0px;
+	position:relative;
+	float: left;
+	width: 100%;
+}
+/*
+.custom-tooltip{
+    position:absolute;
+    width:300px;
+    min-height:50px;
+    padding:10px 5px;
+    top:200px;
+    left:850px;
+    opacity: 0;
+}*/
+
+.state {
+     font-size:1.2em;
+     font-weight:bold;
+}
+
+.container {
+	margin: 0 0;
+	border-width: 0;
+	width:100%;
+	padding: 0;
+
+}
+
+.upper {
+    position: relative;
+    float: left;
+    height:600px;
+
+}
+
+
+.canvas {
+	padding: 10px;
+    width:65%;
+
+}
+
+
+.menu {
+	width:35%;
+	margin-right: 0px;
+	padding: 20px;
+}
+
+.dsir {
+	left:10px;
+}
+
+.control {
+	position: absolute;
+    width: 60%;
+    height: 100px;
+    top:550px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.tick text {
+	fill: #272727;
+	size: 16px;
+}
+
+.axis {
+	font-size: 16px;
+	text-anchor: left;
+}
+
+
+.axis path{
+	stroke: #272727;
+	stroke-width:2px;
+
+}
+
+.handle circle{
+	fill: #A41E21;
+	opacity: visible;
+}
+
+rect.selected {
+	stroke:white;
+	stroke-width:3px; 
+}
+
+.city {
+    font-style: italic;
+    opacity: 0.5;
+    text-anchor: middle;
+    font-size:12px;
+}
+
+.r {
+    color: #A41E21;
+}
+
