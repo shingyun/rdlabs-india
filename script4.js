@@ -75,15 +75,6 @@ function dataLoaded(err, data, code, india) {
     return d.key;}
   );
 
-  var nestByCity = d3.nest().key(function(d){return d.labCity})
-      .rollup(function(d){return d.length})
-      .entries(data);
-
-  var cc = nestByCity.filter(function(d){return d.value>150;})
-
-  console.log(cc);
-
-
 
   var nestedForFlatten = d3.nest().key(function(data){return data.dsir;})
       .key(function(data){return data.labCity;})
@@ -262,8 +253,7 @@ function dataLoaded(err, data, code, india) {
       var enter = update
           .enter()
           .append('circle')
-          .attr('class','lab')
-          .on('click',function(d){console.log(d.labCity)});
+          .attr('class','lab');
 
       update.merge(enter)
            .attr('r',function(d){return scaleR(d.labCount)})
