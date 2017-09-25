@@ -4,33 +4,56 @@
     <title></title>
     <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
- <!--    <link href="style3.css" rel="stylesheet"/> -->
-    
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 </head>
+
 <body>
-<div class="container" id='container'>
+<div class = 'screen'>
+    <div class='slide first_scene'>
         <div class = 'title' id ='title'>
-            <h1><span class='r'>R</span>esearch and <span class='r'>D</span>evelopment <span class='r'>Labs</span> in <span class ='r'>India</span></h1>
+          <h1><span class='r'>R</span>esearch and <span class='r'>D</span>evelopment <span class='r'>Labs</span> in <span class ='r'>India</span></h1>
+          <p>Describe the project</p>
+         </div>
+    </div><!--first_scene -->
+    <div class='slide owned_by'>
+        <div class = 'subtitle ownedby_title' >
+            <h2>Foreign or Domestic?</h2>
+            <p>Describe the project</p>
+        </div>
+    </div>
+    <div class="slide container" id='container'>
+        <div class = 'subtitle map_title' >
+            <h2>Interactive Map</h2>
             <p>Drag the year and apply filter to explore the change</p>
         </div>
         <div class = 'control' id = 'control'></div>
         <div class='canvas upper' id='canvas'>
-<!--            <div class="custom-tooltip">
-              <p class='state'>State </p>
-              <p class="number">Number </p>
-              <p class='year'>Year <p>
-           </div> -->
         </div>
         <div class = 'menu upper'>
             <div class = 'dsir'>
             </div>
         </div>
-</div>
-
+    </div><!--container -->
+<!--   <div class = 'viewpoints'>
+      <div class = 'viewpoint point1'></div>
+      <div class = 'viewpoint point2'></div>
+      <div class = 'viewpoint point3'></div>
+  </div> -->
+    <div class="custom-tooltip">
+       <p class='owned'></p>
+       <p class="number"></p>
+    </div>
+</div> <!--screen -->
 
 <script src="./lib/d3.js"></script>
-<!-- <script src="script.js"></script>  -->
-<!-- <script src="script2.js"></script> -->
+<script src="modules/first_page.js"></script>
+<script src="modules/owned_by.js"></script>
+<script src="modules/map.js"></script>
 <script src="script4.js"></script>
 <script src='./lib/crossfilter/crossfilter.js'></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
